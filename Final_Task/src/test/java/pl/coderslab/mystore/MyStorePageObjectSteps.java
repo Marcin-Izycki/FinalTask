@@ -23,6 +23,7 @@ public class MyStorePageObjectSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://mystore-testlab.coderslab.pl/index.php");
     }
+
     @When("I got to login page")
     public void IGoToSignInPage() {
         MainPage mainPage = new MainPage(driver);
