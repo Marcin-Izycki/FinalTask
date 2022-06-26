@@ -11,10 +11,11 @@ public class MainPage {
         this.driver = driver;
     }
 
-    @FindBy(css = "a[title='Log in to your customer account']")
-    private WebElement signInBtn;
+    //@FindBy(xpath = "//*[@id=\"_desktop_user_info\"]/div/a/span")
+    //private WebElement btn;
 
     public void signIn() {
-        signInBtn.click();
+        driver.findElement(By.xpath("//*[@id=\"_desktop_user_info\"]/div/a/span")).click();
+        //btn.click();
     }
 }

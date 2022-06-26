@@ -32,5 +32,6 @@ public class MyStorePageObjectSteps {
     @And("I log in using {string} and {string}")
     public void LogIn(String email, String passwd) {
         SignInPage logIn = new SignInPage(driver);
+        logIn.logInAs(email, passwd);
     }
 }

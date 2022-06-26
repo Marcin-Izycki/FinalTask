@@ -10,18 +10,18 @@ public class SignInPage {
     public SignInPage(WebDriver driver) {
         this.driver = driver;
     }
-    @FindBy(css = "input[name= email]")
-    private WebElement emialInput;
+    @FindBy(css = "input[name=email]")
+    private WebElement emailInput;
 
-    @FindBy(css = "[name=password]")
+    @FindBy(css = "input[name=password]")
     private WebElement passwdInput;
 
     @FindBy(id = "submit-login")
     private WebElement loginBtn;
 
     public void logInAs(String email, String passwd) {
-        emialInput.clear();
-        emialInput.sendKeys(email);
+        emailInput.clear();
+        emailInput.sendKeys(email);
 
         passwdInput.clear();
         passwdInput.sendKeys(passwd);
