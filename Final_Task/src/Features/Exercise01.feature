@@ -8,11 +8,11 @@ Feature: Add new address
     And I select address
     And I create new address
     And I enter alias <alias>, address <address>, city <city>, postal code <code>, country and phone <phone>
-    Then I check the added address
+    Then I check the added address alias <alias>, address <address>, city <city>, postal code <code>, country and phone <phone>
     And I close page
 
     Examples:
-      | alias  | address  | city  | code | phone  |
-      | alias2  | address  | city  | 222  | 222222 |
-      | alias3  | address  | city  | 222  | 222222 |
+      | alias  | address | city | code | phone  |
+      | alias2 | address | city | 222  | 222222 |
+     # | alias3 | address | city | 222  | 222222 |
 

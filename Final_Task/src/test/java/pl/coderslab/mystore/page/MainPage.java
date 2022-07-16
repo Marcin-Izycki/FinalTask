@@ -21,4 +21,11 @@ public class MainPage {
         btn.click();
         //driver.findElement(By.className("user-info")).click();
     }
+
+    @FindBy(xpath = "//*[@id=\"content\"]/section/div/article[2]/div/div[1]/h3/a")
+    private WebElement productName;
+
+    public void selectProduct() {
+        productName.click();
+    }
 }

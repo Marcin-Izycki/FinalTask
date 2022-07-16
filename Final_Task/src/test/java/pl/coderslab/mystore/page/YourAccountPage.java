@@ -19,9 +19,16 @@ public class YourAccountPage {
     @FindBy(id = "addresses-link")
     private WebElement addAddressBtn;
 
+    @FindBy(id = "_desktop_logo")
+    private WebElement logoBtn;
+
 
     public void createNewAddress() {
         addAddressBtn.click();
+    }
+
+    public void goMainPage() {
+        logoBtn.click();
     }
 
 }
